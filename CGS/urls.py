@@ -15,8 +15,15 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from tastypie.api import Api
+from BEApp.api import CarResource,DriverResource
+
+v1_api = Api(api_name='v1')
+v1_api.register(CarResource())
+v1_api.register(DriverResource())
 
 urlpatterns = [
     url(r'^BEApp/', include('BEApp.urls')),
     url(r'^admin/', admin.site.urls),
+    url(r'^api/', include(v1_api.urls)),
 ]

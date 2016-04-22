@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'tastypie',
     'BEApp.apps.BeappConfig',
     'django.contrib.admin',
     'django.contrib.auth',
