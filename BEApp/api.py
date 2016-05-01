@@ -7,7 +7,7 @@ class CarResource(ModelResource):
     class Meta:
         queryset = Car.objects.all()
         resource_name = 'Car'
-        # authentication = ApiKeyAuthentication() //check
+        # authentication = ApiKeyAuthentication()
 
 class DriverResource(ModelResource):
     class Meta:
