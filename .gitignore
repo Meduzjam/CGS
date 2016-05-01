@@ -1,3 +1,4 @@
 *.pyc
 cgs.sublime-project
 cgs.sublime-workspace
+.idea/workspace.xml
